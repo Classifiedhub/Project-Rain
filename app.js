@@ -14,14 +14,6 @@ let weather__wind = document.querySelector('.weather__wind');
 let weather__pressure = document.querySelector('.weather__pressure');
 
 // search
-document.querySelector(".weather__search").addEventListener('submit', e => {
-    e.preventDefault();
-    // Your existing code
-});
-
-document.querySelector(".weather__search").addEventListener('touchend', e => {
-    e.preventDefault();
-});
 
 document.querySelector(".weather__search").addEventListener('submit', e => {
     let search = document.querySelector(".weather__searchform");
@@ -35,6 +27,13 @@ document.querySelector(".weather__search").addEventListener('submit', e => {
     search.value = "";
 });
 
+document.body.addEventListener('submit', '.weather__search', function(e) {
+    e.preventDefault();
+});
+
+document.querySelector(".weather__search").addEventListener('touchend', e => {
+    e.preventDefault();
+});
 // units
 document.querySelector(".weather_unit_celsius").addEventListener('click', () => {
     if(units !== "metric"){
