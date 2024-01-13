@@ -302,9 +302,15 @@ footer a {
 
 
 @media(max-width: 426px){
+    .container{
+        justify-content: center;
+        align-items: center;
+    }
+    
     .title h1{
         font-size: 40px;
     }
+
 
     .title h2{ 
         font-size: 20px;
