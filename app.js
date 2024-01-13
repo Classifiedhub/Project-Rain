@@ -15,6 +15,15 @@ let weather__pressure = document.querySelector('.weather__pressure');
 
 // search
 document.querySelector(".weather__search").addEventListener('submit', e => {
+    e.preventDefault();
+    // Your existing code
+});
+
+document.querySelector(".weather__search").addEventListener('touchend', e => {
+    e.preventDefault();
+});
+
+document.querySelector(".weather__search").addEventListener('submit', e => {
     let search = document.querySelector(".weather__searchform");
     // prevent default action
     e.preventDefault();

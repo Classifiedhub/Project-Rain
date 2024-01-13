@@ -164,6 +164,11 @@ input::placeholder {
     color: #fff;
 }
 
+.weather__searchform:focus {
+    border: 2px solid #9a9999; 
+    outline: none; 
+}
+
 .weather__units {
     font-size: 1.5rem;
 }
@@ -261,6 +266,13 @@ footer a {
     .weather__units {
         margin-top: 1rem;
     }
+}
+
+@media only screen and (max-width: 600px) {
+    .weather__searchform {
+        width: 80%;
+        margin-right: 0; 
+}
 }
 
 
